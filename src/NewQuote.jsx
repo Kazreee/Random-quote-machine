@@ -77,7 +77,7 @@ export function NewQuote() {
             <p id="author" style={{opacity: state.opacity}}>-{quoteInfo.author}</p>
         <div className="btns">
           <div className="socials">
-            <a href="#" id="tweet-quote" className="btn"><i className="fa-brands fa-twitter"></i></a>
+            <a href={`https://twitter.com/intent/tweet?hastags=quotes&related=freecodecamp&text=${quoteInfo.text}`} id="tweet-quote" className="btn" target="_blank"><i className="fa-brands fa-twitter"></i></a>
             <a href="#" className="btn"><i className="fa-brands fa-tumblr"></i></a>
           </div>
           <button id="new-quote" className="btn" onClick={() => {
